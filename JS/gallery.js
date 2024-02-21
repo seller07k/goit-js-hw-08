@@ -71,17 +71,19 @@ container.classList.add("container");
 document.body.appendChild(container);
 
 container.style.display = "flex";
-container.style.width = "1440px";
-container.style.height = "694px";
+container.style.width = "1128px";
+container.style.height = "648px";
 container.style.padding = "24px 156px";
 
 gallery.style.display = "flex";
 gallery.style.flexDirection = "column";
-gallery.style.justifyContent = "center";
-gallery.style.alignItems = "flex-start";
 gallery.style.flexWrap = "wrap";
 gallery.style.gap = "24px";
 gallery.style.listStyleType = "none";
+gallery.style.paddingInlineStart = "0";
+gallery.style.margin = "0";
+gallery.style.marginBlockStart = "0em";
+gallery.style.marginBlockEnd = "0em";
 
 images.forEach((image) => {
   const listItem = document.createElement("li");
